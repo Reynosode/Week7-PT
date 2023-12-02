@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3</title>
+    
+    <!-- This adds the main bootstrap file so I can use the class selectors for styling -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="index.js"></script>
+
+</head>
+<body class="p-3 mb-2 bg-secondary text-white">
+    
+    <!-- The 2 lines below add the jquery and boostrap.bundle.js into my website in order to reference it -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+    <!-- The class below creates an alert that appears at the top of the screen. alert-primary styles it -->
+    <div class="alert alert-primary" role="alert">
+        Woohoo! Bootstrap Works!!! :D
+    </div>
+
+    <!-- Below is the code for the navbar and the classes that style it -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <!-- This makes the navbar container responsive to the size of the page on the device it is viewed on -->
+        <div class="container-fluid">
+          
+            <!-- This part creates the main button for the navbar  -->
+            <a class="navbar-brand" href="index.html">AERO Birds</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <!-- Below creates the following buttons after the main button. Making links to my other pages in the form of a list. -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="2nd-Page.html">2nd Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="3rd-Page.html">3rd Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-ME.html">About ME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fun Stuff</a>
+                    
+                        <!-- The section of the code references the bootstrap.bundle.js in order to create the dropdown on the navbar -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Follow Me</a></li>
+                            <li><a class="dropdown-item" href="#">Donate ;)</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Penguins</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- This is the code for the search bar -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Below is the Bootstrap grid with a couple of class selectors-->
+    <div class="container mx-auto col-6 text-center row">
+        
+        <!-- Boeing 787 -->
+        <!-- class="card" styles the div below as a card. text-bg-dark changes the color of the background. width: 18rem multiplies the root-element size using the input value 18. -->
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+            <img src="Pictures/787.jpg" class="card-img-top h-50" alt="Picture of 787">
+            <!-- This syntax styles the information below the picture. creating different sizes and thickness for text, also the classes below automatically center the text -->
+            <div class="card-body">
+              <h5 class="card-title">Boeing 787</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="btn btn-primary">More Information</a>
+            </div>
+        </div>
+        
+        <!-- Boeing 777 -->
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+            <img src="Pictures/777.jpg" class="card-img-top h-50" alt="Picture of 777">
+            <div class="card-body">
+              <h5 class="card-title">Boeing 777</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="btn btn-primary">More Information</a>
+            </div>
+        </div>
+        
+        <!-- Boeing 767 -->
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+            <img src="Pictures/767.jpg" class="card-img-top h-50" alt="Picture of 767">
+            <div class="card-body">
+              <h5 class="card-title">Boeing 767</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="btn btn-primary">More Information</a>
+            </div>
+        </div>
+        
+        <!-- Boeing 757 -->
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+            <img src="Pictures/757.jpg" class="card-img-top h-50" alt="Picture of 757">
+            <div class="card-body">
+              <h5 class="card-title">Boeing 757</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="btn btn-primary">More Information</a>
+            </div>
+        </div>
+        
+        <!-- Boeing 747 -->
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+            <img src="Pictures/747.jpg" class="card-img-top h-50" alt="Picture of 747">
+            <div class="card-body">
+              <h5 class="card-title">Boeing 747</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="btn btn-primary">More Information</a>
+            </div>
+        </div>
+        
+        <!-- Boeing 737 -->
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+            <img src="Pictures/737.jpg" class="card-img-top h-50" alt="Picture of 737">
+            <div class="card-body">
+              <h5 class="card-title">Boeing 737</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="btn btn-primary">More Information</a>
+            </div>
+        </div>
+
+    </div>  
+</body>
+</html>

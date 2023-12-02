@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="p-3 mb-2 bg-secondary text-white">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- Below is the code for the navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <!-- This makes the navbar container responsive to the size of the page on the device it is viewed on -->
+      <div class="container-fluid">
+        
+        <!-- This part creates the  -->
+          <a class="navbar-brand" href="index.html">AERO Birds</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="2nd-Page.html">2nd Page</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="3rd-Page.html">3rd Page</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="About-ME.html">About ME</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fun Stuff</a>
+                  
+                      <!-- The section of the code references the bootstrap.bundle.js in order to create the dropdown on the navbar -->
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Follow Me</a></li>
+                          <li><a class="dropdown-item" href="#">Donate ;)</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Penguins</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <!-- This is the code for the form -->
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+
+
+</body>
+</html>
